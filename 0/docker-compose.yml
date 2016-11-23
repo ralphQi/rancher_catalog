@@ -1,4 +1,4 @@
 codis-dashboard:
-  image: registry.cn-beijing.aliyuncs.com/fitcare/codis
+  image: registry.cn-beijing.aliyuncs.com/fitcare/codis:latest
   external_links:
     - ${zookeeper_service}:zookeeper
