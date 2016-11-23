@@ -9,6 +9,12 @@
       type: "string"
       required: true
       default: "codis"
+    - variable: "zookeeper_service"
+      description: "Link to zookeeper service"
+      label: "Zookeeper service"
+      type: "service"
+      required: true
+      default: "zk/zookeeper"
 codis-dashboard:
   metadata:
     elasticsearch:
