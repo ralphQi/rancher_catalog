@@ -1,0 +1,19 @@
+.catalog:
+  name: "Codis"
+  version: "1.0"
+  description: "Codis, a redis cluster solution"
+  questions:
+    - variable: cluster_name
+      description: "Unique name to assign to your Codis cluster."
+      label: "Cluster Name"
+      type: "string"
+      required: true
+      default: "codis"
+codis-dashboard:
+  metadata:
+    elasticsearch:
+      yml:
+        cluster.name: "${cluster_name}"
+        node.name: "$${HOSTNAME}"
+        node.data: "false"
+        node.master: "true"

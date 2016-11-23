@@ -1,0 +1,2 @@
+codis-dashboard:
+  image: registry.cn-beijing.aliyuncs.com/fitcare/codis
